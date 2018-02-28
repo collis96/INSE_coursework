@@ -1,22 +1,39 @@
-# INSE_coursework
+# H1 INSE_coursework
 
-To do list:
+# H1 To do list:
 
-1. Implement a login and register subsystem ** GUI DONE, NEEDS FUNCTIONALITY **
- - Need to store inputs
+## H2 Functionality
+
+1. Implement a login and register subsystem
+
+ - Need to store inputs **DATABASE**
  - Using if statements to decide if login details are correct
  - return false or true
- 
-2. Implement the main screen for navigation after the user logs in
+
+2. ~~Implement the main screen for navigation after the user logs in~~
+
 3. Implement PROFILE
-4. Implement a search for a team
+
+- Need to take current logged in user and display their information taken from database
+
+4. Implement a search for a team function
+
+- Communicate with database
+- Search the database using search criteria
+- Display teams/ players where criteria returns **TRUE**
+
 5. Implement MESSAGE function
 
-The above is the MODEL, we then need to implement the GUI:
+## H2 GUI
 
-6. Add a graphical user interface
-7. Link model the to the GUI
+6. ~~Add a graphical user interface~~
 
-8. Test if it works
-9. Look for errors, try to break it
-10. Implement JavaDOC and comments throughout
+7. Store account registration input data in the **database**
+
+8. Link model the to the GUI buttons
+
+## H2 Finishing touches
+
+8. Testing phase, look for errors, try to break it.
+
+10. Implement JavaDOC and comments throughout.
