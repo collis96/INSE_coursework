@@ -18,7 +18,7 @@ public class LoginForm extends javax.swing.JFrame {
      */
     public LoginForm() {
         initComponents();
-        this.setLocationRelativeTo(this); // centre the login form
+        this.setLocationRelativeTo(null); // centre the login form
     }
 
     /**
@@ -128,6 +128,12 @@ public class LoginForm extends javax.swing.JFrame {
 
         jButtonLogin.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButtonLogin.setText("Login");
+        jButtonLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButtonLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonLoginMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelBodyLayout = new javax.swing.GroupLayout(jPanelBody);
         jPanelBody.setLayout(jPanelBodyLayout);
@@ -210,6 +216,21 @@ public class LoginForm extends javax.swing.JFrame {
         this.dispose();
         
     }//GEN-LAST:event_jLabelCreateAccMouseClicked
+
+    private void jButtonLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonLoginMouseClicked
+        /*
+        if correct login details == true, then proceed with login, else throw error
+        */
+        
+        //Below is the login code
+        NavigateForm navForm = new NavigateForm();
+        navForm.setVisible(true);
+        navForm.pack();
+        navForm.setLocationRelativeTo(null);
+        navForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+        
+    }//GEN-LAST:event_jButtonLoginMouseClicked
 
     /**
      * @param args the command line arguments

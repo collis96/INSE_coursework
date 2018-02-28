@@ -18,7 +18,7 @@ public class RegisterForm extends javax.swing.JFrame {
      */
     public RegisterForm() {
         initComponents();
-        this.setLocationRelativeTo(this); // centre the register form
+        this.setLocationRelativeTo(null); // centre the register form
     }
 
     /**
