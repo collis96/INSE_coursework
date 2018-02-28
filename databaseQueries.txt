@@ -1,17 +1,18 @@
+#queries that the application will probably need to run
 #Show users name
 select concat(userFName,' ',userLName) as Name from users;
 
-#Show messages sent by user2
+#Show messages sent by user2, replace userID with logged in user
 select messages.message, messages.senderID, recipients.recipientID
 from messages inner join recipients on messages.messageID = recipients.messageID
 where messages.senderID=2;
 
-#Show messages recieved by user2
+#Show messages recieved by user2, replace userID with logged in user
 select messages.message, messages.senderID, recipients.recipientID
 from messages inner join recipients on messages.messageID = recipients.messageID
 where recipients.recipientID=2;
 
-#Show all members of a team
+#Show all members of a team, replace teamID with the teamID of the team being viewed
 select users.userName, teams.teamName
 from
     users
