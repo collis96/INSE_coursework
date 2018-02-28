@@ -1,8 +1,8 @@
-# H1 INSE_coursework
+# INSE_coursework
 
-# H1 To do list:
+# To do list:
 
-## H2 Functionality
+## Functionality
 
 1. Implement a login and register subsystem
 
@@ -24,7 +24,7 @@
 
 5. Implement MESSAGE function
 
-## H2 GUI
+## GUI
 
 6. ~~Add a graphical user interface~~
 
@@ -32,7 +32,7 @@
 
 8. Link model the to the GUI buttons
 
-## H2 Finishing touches
+## Finishing touches
 
 8. Testing phase, look for errors, try to break it.
 
