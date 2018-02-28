@@ -19,8 +19,40 @@ teamLocation varchar(120),
 teamType varchar(80) not null
 );
 
+create table if not exists teamMembers(
+teamID int not null,
+userID int not null,
+foreign key (teamID) references teams(teamID),
+foreign key (userID) references users(userID),
+primary key (teamID, userID)
+);
+
+create table if not exists messages(
+messageID int not null auto_increment primary key,
+senderID int,
+message varchar(300),
+foreign key (senderID) references users(userID)
+);
+
+create table if not exists recipients(
+messageID int,
+recipientID int,
+foreign key (messageID) references messages(messageID),
+foreign key (recipientID) references users(userID)
+);
+
 #default follows auto_increment rule
-insert into users values (default,'fName','lName','uName','psswrd',18); 
+insert into users values (default,'fName1','lName1','uName1','psswrd',18);
+insert into users values (default,'fName2','lName2','uName2','psswrd',21);
 
 insert into teams values (default,'2D','sportName','Portsmouth','Free');
 insert into teams values (default,'1B','sportName','London','Paid');
+
+insert into teamMembers values(1,1);
+insert into teamMembers values(2,2);
+
+insert into messages values (default,1,'1 to 2');
+insert into messages values (default,2,'2 to 1');
+
+insert into recipients values (1,2);
+insert into recipients values (2,1);
