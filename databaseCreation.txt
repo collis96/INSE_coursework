@@ -1,0 +1,26 @@
+create database sportsApp;
+
+use sportsApp;
+
+create table if not exists users(
+userID int not null auto_increment primary key,
+userFName varchar(80) not null,
+userLName varchar(80) not null,
+userName varchar(80) not null,
+userPassword varchar(80) not null,
+age int not null
+);
+
+create table if not exists teams(
+teamID int not null auto_increment primary key,
+teamName varchar(120) not null,
+teamSport varchar(120) not null,
+teamLocation varchar(120),
+teamType varchar(80) not null
+);
+
+#default follows auto_increment rule
+insert into users values (default,'fName','lName','uName','psswrd',18); 
+
+insert into teams values (default,'2D','sportName','Portsmouth','Free');
+insert into teams values (default,'1B','sportName','London','Paid');
