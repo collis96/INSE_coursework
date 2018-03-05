@@ -17,7 +17,9 @@ create table if not exists teams(
 teamID int not null auto_increment primary key,
 teamName varchar(120) not null,
 teamSport varchar(120) not null,
-teamLocation varchar(120),
+teamLocation varchar(80) not null,
+teamLocationX DECIMAL(10,2) not null,
+teamLocationY DECIMAL(10,2) not null,
 teamType varchar(80) not null
 );
 
@@ -48,8 +50,8 @@ foreign key (recipientID) references users(userID)
 insert into users values (default,'fName1','lName1','uName1','psswrd',18);
 insert into users values (default,'fName2','lName2','uName2','psswrd',21);
 
-insert into teams values (default,'2D','sportName','Portsmouth','Free');
-insert into teams values (default,'1B','sportName','London','Paid');
+insert into teams values (default,'2D','sportName','Portsmouth',65.234501,-23.455401,'Free');
+insert into teams values (default,'1B','sportName','Manchester',9.3432123,81.472740,'Paid');
 
 insert into teamMembers values(1,1);
 insert into teamMembers values(2,2);
