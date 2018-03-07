@@ -154,12 +154,12 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jPassConfirmField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldFirstName" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldLastName" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldUsername" max="32767" attributes="0"/>
-                                  <Component id="jPasswordField" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldAge" pref="133" max="32767" attributes="0"/>
+                                  <Component id="passwordConfirmField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="fName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="lName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="userName" max="32767" attributes="0"/>
+                                  <Component id="passwordField" max="32767" attributes="0"/>
+                                  <Component id="ageField" pref="133" max="32767" attributes="0"/>
                               </Group>
                               <Component id="jButtonCreateAcc" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -175,32 +175,32 @@
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelFirstName" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldFirstName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fName" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelLastName" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldLastName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lName" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelUsername" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldUsername" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="userName" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelPassword" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jPasswordField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="passwordField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelPassConfirm" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jPassConfirmField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="passwordConfirmField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelAge" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldAge" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ageField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jButtonCreateAcc" min="-2" max="-2" attributes="0"/>
@@ -304,7 +304,7 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelLoginPageMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldFirstName">
+        <Component class="javax.swing.JTextField" name="fName">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="a6" green="a5" red="95" type="rgb"/>
@@ -319,10 +319,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldFirstNameActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fNameActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldLastName">
+        <Component class="javax.swing.JTextField" name="lName">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="a6" green="a5" red="95" type="rgb"/>
@@ -337,7 +337,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldUsername">
+        <Component class="javax.swing.JTextField" name="userName">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="a6" green="a5" red="95" type="rgb"/>
@@ -352,7 +352,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JPasswordField" name="jPasswordField">
+        <Component class="javax.swing.JPasswordField" name="passwordField">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="a6" green="a5" red="95" type="rgb"/>
@@ -367,7 +367,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JPasswordField" name="jPassConfirmField">
+        <Component class="javax.swing.JPasswordField" name="passwordConfirmField">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="a6" green="a5" red="95" type="rgb"/>
@@ -382,7 +382,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldAge">
+        <Component class="javax.swing.JTextField" name="ageField">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="a6" green="a5" red="95" type="rgb"/>
