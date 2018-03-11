@@ -11,6 +11,7 @@ userLName varchar(80) not null,
 userName varchar(80) not null,
 userPassword varchar(80) not null,
 userLocation varchar(80) not null,
+userSports varchar (120) not null,
 age int not null
 );
 
