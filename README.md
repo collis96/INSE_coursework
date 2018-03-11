@@ -4,11 +4,10 @@
 
 ## Functionality
 
-1. Implement a login and register subsystem
+1. ~~Implement a login and register subsystem~~
 
- - Need to store inputs **DATABASE**
- - Using if statements to decide if login details are correct
- - return false or true
+ ~~Need to store inputs~~
+ ~~Using if statements to decide if login details are correct~~
 
 2. ~~Implement the main screen for navigation after the user logs in~~
 
@@ -28,9 +27,7 @@
 
 6. ~~Add a graphical user interface~~
 
-7. Store account registration input data in the **database**
-
-8. Link model the to the GUI buttons
+8. Link model to the the GUI buttons
 
 ## Finishing touches
 
