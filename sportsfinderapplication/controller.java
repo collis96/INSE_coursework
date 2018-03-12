@@ -7,7 +7,7 @@ package sportsfinderapplication;
 
 /**
  *
- * @author Jack
+ * @author up782738
  */
 
 public class controller {
