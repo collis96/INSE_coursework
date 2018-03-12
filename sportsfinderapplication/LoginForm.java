@@ -16,7 +16,6 @@ import javax.swing.*;
 public class LoginForm extends javax.swing.JFrame {
 java.sql.Connection conn = null;
 ResultSet rs = null;
-Statement st;
 
 private JFrame frame;
 
@@ -245,11 +244,14 @@ private JFrame frame;
             ResultSet rs = stmt.executeQuery(DBQ);
             if(rs.next()) {
                 JOptionPane.showMessageDialog(null,"Welcome user");
-                NavigateForm navForm = new NavigateForm();
-                navForm.setVisible(true);
-                navForm.pack();
-                navForm.setLocationRelativeTo(null);
-                navForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                user usr;
+                usr = new user(jTextFieldUsername.getText());
+                
+                ApplicationView appView = new ApplicationView();
+                appView.setVisible(true);
+                appView.pack();
+                appView.setLocationRelativeTo(null);
+                appView.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 this.dispose();
             } else {
                 JOptionPane.showMessageDialog(null,"Incorrect username or password");

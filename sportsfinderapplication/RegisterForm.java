@@ -299,15 +299,15 @@ public class RegisterForm extends javax.swing.JFrame {
                 
                 JOptionPane.showMessageDialog(null, "The passwords do not match");
                  
-            } else if (model.checkLength(userName.getText()) == false) {
+            } else if (controller.checkLength(userName.getText()) == false) {
                 
                 JOptionPane.showMessageDialog(null, "Incorrect username length");
                  
-            } else if (model.checkLength(fName.getText()) == false || model.checkLength(lName.getText()) == false) {
+            } else if (controller.checkLength(fName.getText()) == false || controller.checkLength(lName.getText()) == false) {
                 
                 JOptionPane.showMessageDialog(null, "Incorrect name length");
                 
-            } else if (model.checkLength(passwordField.getText()) == false) {
+            } else if (controller.checkLength(passwordField.getText()) == false) {
                 
                 JOptionPane.showMessageDialog(null, "Incorrect password length");
                 
