@@ -34,3 +34,9 @@
 8. Testing phase, look for errors, try to break it.
 
 10. Implement JavaDOC and comments throughout.
+
+# Important
+
+To connect to the online database, the jar file "mysql-connector-java-5.1.46-bin" must be added to the project libraries.
+
+![Alt Text](https://imgur.com/a/NBzAi)
