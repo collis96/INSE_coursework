@@ -39,4 +39,4 @@
 
 To connect to the online database, the jar file "mysql-connector-java-5.1.46-bin" must be added to the project libraries.
 
-![Alt Text](https://imgur.com/a/NBzAi)
+![Alt Text](http://i63.tinypic.com/2zzhqwm.png)
