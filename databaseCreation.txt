@@ -49,8 +49,8 @@ foreign key (recipientID) references users(userID)
 
 #some data for testing that can be deleted later on
 #default follows auto_increment rule
-insert into users values (default,'fName1','lName1','uName1','psswrd',18);
-insert into users values (default,'fName2','lName2','uName2','psswrd',21);
+insert into users values (default,'fName1','lName1','uName1','psswrd', 'Portsmouth', 'Football',18);
+insert into users values (default,'fName2','lName2','uName2','psswrd', 'Southampton', 'Cricket',21);
 
 insert into teams values (default,'2D','sportName','Portsmouth',65.234501,-23.455401,'Free');
 insert into teams values (default,'1B','sportName','Manchester',9.3432123,81.472740,'Paid');
