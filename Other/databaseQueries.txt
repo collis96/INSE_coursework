@@ -1,0 +1,29 @@
+#queries that the application will probably need to run
+
+#Show users name
+select concat(userFName,' ',userLName) as Name from users;
+
+#Show messages sent by user2, replace userID with logged in user
+select messages.message, messages.senderID, recipients.recipientID
+from messages inner join recipients on messages.messageID = recipients.messageID
+where messages.senderID=2;
+
+#Show messages recieved by user2, replace userID with logged in user
+select messages.message, messages.senderID, recipients.recipientID
+from messages inner join recipients on messages.messageID = recipients.messageID
+where recipients.recipientID=2;
+
+#Show all members of a team, replace teamID with the teamID of the team being viewed
+select users.userName, teams.teamName
+from
+    users
+        inner join
+    teamMembers
+        on users.userID = teamMembers.userID
+        inner join 
+    teams
+        on teamMembers.teamID = teams.teamID
+where teams.teamID = 1;
+
+#Search for teams, replace 2 with what user searches for
+select * from teams where teamName like "%2%";

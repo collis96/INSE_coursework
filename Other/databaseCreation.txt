@@ -1,0 +1,65 @@
+drop database if exists sportsApp;
+
+create database sportsApp;
+
+use sportsApp;
+
+create table if not exists users(
+userID int not null auto_increment primary key,
+userFName varchar(80) not null,
+userLName varchar(80) not null,
+userName varchar(80) not null,
+userPassword varchar(80) not null,
+userLocation varchar(80) not null,
+userSports varchar (120) not null,
+age int not null
+);
+
+create table if not exists teams(
+teamID int not null auto_increment primary key,
+teamName varchar(120) not null,
+teamSport varchar(120) not null,
+teamLocation varchar(80) not null,
+teamLocationX DECIMAL(10,2) not null,
+teamLocationY DECIMAL(10,2) not null,
+teamType varchar(80) not null
+);
+
+create table if not exists teamMembers(
+teamID int not null,
+userID int not null,
+foreign key (teamID) references teams(teamID),
+foreign key (userID) references users(userID),
+primary key (teamID, userID)
+);
+
+create table if not exists messages(
+messageID int not null auto_increment primary key,
+senderID int,
+message varchar(300),
+foreign key (senderID) references users(userID)
+);
+
+create table if not exists recipients(
+messageID int,
+recipientID int,
+foreign key (messageID) references messages(messageID),
+foreign key (recipientID) references users(userID)
+);
+
+#some data for testing that can be deleted later on
+#default follows auto_increment rule
+insert into users values (default,'fName1','lName1','uName1','psswrd', 'Portsmouth', 'Football',18);
+insert into users values (default,'fName2','lName2','uName2','psswrd', 'Southampton', 'Cricket',21);
+
+insert into teams values (default,'2D','sportName','Portsmouth',65.234501,-23.455401,'Free');
+insert into teams values (default,'1B','sportName','Manchester',9.3432123,81.472740,'Paid');
+
+insert into teamMembers values(1,1);
+insert into teamMembers values(2,2);
+
+insert into messages values (default,1,'1 to 2');
+insert into messages values (default,2,'2 to 1');
+
+insert into recipients values (1,2);
+insert into recipients values (2,1);
