@@ -8,7 +8,12 @@ import javax.swing.*;
 
 /**
  *
+ * LoginForm is the initial form upon running the application, it handles user login input
+ * 
  * @author up782738
+ * @version 1.0
+ * @since 13/03/2018
+ * 
  */
 public class LoginForm extends javax.swing.JFrame {
 java.sql.Connection conn = null;

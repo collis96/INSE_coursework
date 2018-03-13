@@ -6,7 +6,12 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Jack
+ * The applicationView is the main JFrame for the program
+ * 
+ * @author up782738
+ * @version 1.0
+ * @since 13/03/2018
+ * 
  */
 public class ApplicationView extends javax.swing.JFrame {
     

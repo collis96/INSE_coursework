@@ -12,7 +12,12 @@ import java.sql.SQLIntegrityConstraintViolationException;
 
 /**
  *
+ * RegisterForm retrieves user input for registering an account.
+ * 
  * @author up782738
+ * @version 1.0
+ * @since 13/03/2018
+ * 
  */
 public class RegisterForm extends javax.swing.JFrame {
     
