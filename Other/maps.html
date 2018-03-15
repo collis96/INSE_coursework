@@ -4,13 +4,15 @@
     <link rel="stylesheet" href="mapStyle">
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    
+
+    <!-- this section is a script used to get the google maps api-->
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMzD-IEwau01mqw-4dJPDnvDv2l-tIm-Y&sensor=false">
     </script>
     <script type="text/javascript">
       var map;
 
+      //this function is used to initialize the map, giving it an amount of zoom and a starting centre point
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(50.8198, 1.0880),
@@ -21,14 +23,23 @@
             mapOptions);
       }
 
-      
+
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
   </head>
 
   <body>
+
+    <!-- this is used to display the map in the html file it is the only content we need here -->
     <div id="map-canvas"/>
+
+    <!-- the map works in java by using a browser-->
+    <!-- the map relies on google's map api which is using javascript, hence the need for this file and its use within the project-->
+    <!-- the browser should automatically display this html file when loaded -->
+
+
+
   </body>
 
 </html>
